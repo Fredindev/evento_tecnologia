@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007BFF;
+    color: white;
+
+    h1 {
+        margin: 0;
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .btn-inscricao {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: #007BFF;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+
+        &-inscricao:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+    }
+}
+
+
+#countdown {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+
+    h2 {
+        margin: 0 0 20px;
+    }
+}
+
+
+#timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    div {
+        text-align: center;
+        background-color: #007BFF;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    span {
+        display: block;
+        font-size: 2em;
+    }
+}
+
+
+#galeria {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.fotos img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#inscricao {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    form {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+
+}
+
+#inscricao label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#inscricao input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#inscricao button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#inscricao button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    header{
+        h1 {
+            font-size: 2.5em;
+        }
+    } 
+
+    header {
+        p {
+            font-size: 1em;
+        }
+    }
+
+    #timer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .fotos img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #inscricao form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            font-size: 0.9em;
+        }
+    }
+
+    .fotos img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+}

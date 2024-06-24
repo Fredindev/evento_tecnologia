@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Tecnologia</title>
+    <link rel="stylesheet" href="/src/styles/main.scss">
+</head>
+<body>
+    <header>
+        <h1>Evento de Tecnologia 2024</h1>
+        <p>Junte-se a nós para uma jornada incrível no mundo da tecnologia!</p>
+        <a href="#inscricao" class="btn-inscricao">Inscreva-se Agora</a>
+    </header>
+    
+    <section id="countdown">
+        <h2>O evento começa em:</h2>
+        <div id="timer">
+            <div><span id="days"></span><p>Dias</p></div>
+            <div><span id="hours"></span><p>Horas</p></div>
+            <div><span id="minutes"></span><p>Minutos</p></div>
+            <div><span id="seconds"></span><p>Segundos</p></div>
+        </div>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="fotos">
+            <img src="/images/129784.jpg" alt="Foto 1">
+            <img src="/images/2150038860.jpg" alt="Foto 2">
+            <img src="/images/2150038890.jpg" alt="Foto 3">
+            <img src="/images/2150169858.jpg" alt="Foto 4">
+        </div>
+    </section>
+
+    <section id="inscricao">
+        <h2>Inscreva-se para o Evento</h2>
+        <form action="#" method="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Evento de Tecnologia. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="/src/scripts/main.js"></script>
+</body>
+</html>
